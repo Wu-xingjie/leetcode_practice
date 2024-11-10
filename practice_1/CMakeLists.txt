@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.20)
+project(element_of_sum CXX)
+set(CMAKE_CXX_STANDARD 11)
+add_library(ElementOfSum STATIC practice1.cpp)
+add_executable(main main.cpp)
+target_link_libraries(main ElementOfSum)
+set(CMAKE_BUILD_TYPE debug)
+message("cmake type: ${CMAKE_BUILD_TYPE}")
